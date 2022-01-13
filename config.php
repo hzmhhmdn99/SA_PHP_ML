@@ -5,4 +5,4 @@
 //  Never commit your API keys etc...
 //---------------------------------------------------------
 
-const MONKEYLEARN = "a03e3deb54268a47418bb80805c03085929c453f";
+const MONKEYLEARN = "<YOUR MONKEY LEARN API KEY>";
