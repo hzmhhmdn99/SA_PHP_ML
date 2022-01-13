@@ -7,6 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Laravel and Sentiment Analysis with MonkeyLearn.
+
+This is a quick and dirty script to quickly  sentiment analysis of food eatery review via
+[MonkeyLearn](http://monkeylearn.com/). It is in no way meant for production usage.
+
+* Step 1: Get a Monkey Learn API key and generate custom model from [here](https://app.monkeylearn.com/accounts/register/)
+* Step 2: Clone this repo and replace config.php with your API keys obtained in steps 1 and the event hashtag you wish
+ to analyse (all events may not be available)
+* Step 4: Download [composer](https://getcomposer.org/download/) if not on your local system
+* Step 5: Run `composer install`
+* Step 6: Run the script on the command line with `php artisan serve` to enter the review and submit to see the sentiment
+
+The result of the analysis will produce the either the sentiment is positive, negative or neutral. Note that this analysis was performed 
+based on the trained model that is custom made from MonkeyLearn.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -27,27 +42,6 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
 
 ## Contributing
 
