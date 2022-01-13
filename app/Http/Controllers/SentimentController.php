@@ -33,7 +33,7 @@ class SentimentController extends Controller
         
         $ml = new Client(MONKEYLEARN);
         $data = [" $req "];
-        $model_id = 'cl_PNXNX5sL';
+        $model_id = '<YOUR MODEL ID>';
         $res = $ml->classifiers->classify($model_id, $data);
         
         //$json = json_decode()
